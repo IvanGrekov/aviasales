@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/aviasales/static/css/main.c2649cfb.chunk.css",
+    "main.js": "/aviasales/static/js/main.fd25860b.chunk.js",
+    "main.js.map": "/aviasales/static/js/main.fd25860b.chunk.js.map",
+    "runtime-main.js": "/aviasales/static/js/runtime-main.3c09c3b6.js",
+    "runtime-main.js.map": "/aviasales/static/js/runtime-main.3c09c3b6.js.map",
+    "static/js/2.41b87d97.chunk.js": "/aviasales/static/js/2.41b87d97.chunk.js",
+    "static/js/2.41b87d97.chunk.js.map": "/aviasales/static/js/2.41b87d97.chunk.js.map",
+    "index.html": "/aviasales/index.html",
+    "static/css/main.c2649cfb.chunk.css.map": "/aviasales/static/css/main.c2649cfb.chunk.css.map",
+    "static/js/2.41b87d97.chunk.js.LICENSE.txt": "/aviasales/static/js/2.41b87d97.chunk.js.LICENSE.txt",
+    "static/media/Ticket.scss": "/aviasales/static/media/carrier-logo.87bb9788.png",
+    "static/media/Input.scss": "/aviasales/static/media/check mark.2e77f871.svg",
+    "static/media/App.scss": "/aviasales/static/media/logo.eff7698c.png",
+    "static/media/TicketDetails.scss": "/aviasales/static/media/plane-icon.2b5eee33.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c09c3b6.js",
+    "static/js/2.41b87d97.chunk.js",
+    "static/css/main.c2649cfb.chunk.css",
+    "static/js/main.fd25860b.chunk.js"
+  ]
+}
