@@ -1,0 +1,50 @@
+@import '../../styles-extends/variables';
+
+.Details {
+  @media (max-width: $mobile-screen-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__time-wrapper {
+    @media (max-width: $mobile-screen-width) {
+      order: 2;
+    }
+  }
+
+  &__time {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 40px;
+
+    @media (max-width: $mobile-screen-width) {
+      margin-bottom: 0;
+
+      line-height: 1em;
+    }
+  }
+
+  &__additional-info-wrapper {
+    @media (max-width: $mobile-screen-width) {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__place {
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+    @media (max-width: $mobile-screen-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__date {
+    color: $reserve-font-color;
+  }
+}

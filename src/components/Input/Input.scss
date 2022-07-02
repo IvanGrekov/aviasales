@@ -1,0 +1,95 @@
+@import '../../styles-extends/variables';
+@import '../../styles-extends/extends';
+@import '../../styles-extends/mixins';
+
+.Input {
+  display: flex;
+  flex-direction: column;
+
+  &:last-of-type {
+    margin-bottom: $form-gap;
+  }
+
+  &__label {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__label-text {
+    margin-left: 7px;
+
+    font-size: 18px;
+  }
+
+  &__format {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  &__input {
+    align-self: stretch;
+    padding: 10px 20px;
+    padding-right: $input-padding-right;
+
+    font-size: 16px;
+    color: $font-color;
+
+    border: 1px solid $gray-color;
+    border-radius: 10px;
+    outline: 0;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+
+    &:hover {
+      border-color: $input-hover-color;
+    }
+
+    &:focus {
+      border-color: $input-focus-color;
+    }
+
+    &--valid-error {
+      border-color: $input-valid-error;
+
+      &:hover {
+        border-color: $input-valid-error;
+      }
+
+      &:focus {
+        border-color: $input-valid-error;
+      }
+    }
+
+    &--valid-success {
+      border-color: $blue;
+
+      &:hover {
+        border-color: $blue;
+      }
+
+      &:focus {
+        border-color: $blue;
+      }
+    }
+  }
+
+  &__validation-icon {
+    @include createSquare($valid-sign-size);
+    @extend %check-mark;
+
+    position: absolute;
+    right: $valid-sign-right-shift;
+    top: 35px;
+
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

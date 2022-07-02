@@ -1,0 +1,37 @@
+@import '../../styles-extends/variables';
+@import '../../styles-extends/extends';
+
+.FormBuyTicket {
+  display: flex;
+  flex-direction: column;
+  gap: $form-gap;
+  padding: $modal-window-padding;
+
+  @media (max-width: $tablet-screen-width) {
+    gap: $mobile-form-gap;
+    padding: $tablet-modal-window-padding;
+  }
+
+  &__button {
+    @extend %button;
+    @extend %button-text;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    &:disabled {
+      color: $gray-color;
+
+      background-color: $buy-button--disabled;
+      box-shadow: none;
+
+      cursor: not-allowed;
+
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

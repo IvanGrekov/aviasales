@@ -1,0 +1,19 @@
+@import '../../styles-extends/extends';
+
+.StopFilterItem {
+  &__checkbox {
+    @extend %stop-filter-checkbox;
+  }
+
+  &__checkbox {
+    @extend %stop-filter-checkbox;
+  }
+
+  &__checkbox-icon {
+    @extend %stop-filter-checkbox-icon;
+
+    &--active {
+      @extend %stop-filter-checkbox-icon--active;
+    }
+  }
+}

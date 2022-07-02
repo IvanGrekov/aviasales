@@ -1,0 +1,39 @@
+@import '../../styles-extends/variables';
+
+.CurrencyButton {
+  flex-grow: 1;
+  display: block;
+  height: 35px;
+
+  font-weight: bold;
+  color: $blue;
+  text-transform: uppercase;
+
+  border: 1px solid $gray-color;
+  background-color: $reserve-bg-color;
+
+  &:first-child {
+    border-radius: $button-border-radius 0 0 $button-border-radius;
+  }
+
+  &:last-child {
+    border-radius: 0 $button-border-radius $button-border-radius 0;
+  }
+
+  &:hover {
+    border-color: $blue;
+    background-color: $hover-color;
+  }
+
+  &--active {
+    color: $reserve-bg-color;
+
+    border-color: $blue;
+    background-color: $blue;
+
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+    }
+  }
+}

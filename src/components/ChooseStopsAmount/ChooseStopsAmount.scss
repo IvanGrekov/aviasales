@@ -1,0 +1,40 @@
+@import '../../styles-extends/variables';
+@import '../../styles-extends/extends';
+
+.ChooseStopsAmount {
+  &__title {
+    @extend %search-params-title;
+  }
+
+  &__item {
+    margin-left: -$horizontal-paddings;
+    margin-right: -$horizontal-paddings;
+    padding: $filter-items-vertical-paddings $horizontal-paddings;
+
+    cursor: pointer;
+
+    &:first-child {
+      margin-top: -$filter-items-vertical-paddings;
+    }
+
+    &:last-child {
+      margin-bottom: -$filter-items-vertical-paddings;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &__checkbox {
+    @extend %stop-filter-checkbox;
+  }
+
+  &__checkbox-icon {
+    @extend %stop-filter-checkbox-icon;
+
+    &--active {
+      @extend %stop-filter-checkbox-icon--active;
+    }
+  }
+}

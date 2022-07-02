@@ -1,0 +1,35 @@
+@import '../../styles-extends/variables';
+
+.Loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__spinner {
+    width: 1em;
+    height: 1em;
+    margin: 0.5em auto;
+
+    border: 0.3em solid $gray-color;
+    border-radius: 50%;
+    border-left-color: #fff;
+    animation: load8 1.2s infinite linear;
+
+    @keyframes load8 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+
+    text-align: center;
+  }
+}

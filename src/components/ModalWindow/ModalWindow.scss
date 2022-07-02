@@ -1,0 +1,93 @@
+@import '../../styles-extends/variables';
+@import '../../styles-extends/extends';
+
+.ModalWindow {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  padding: 10px 0;
+
+  border-radius: 20px;
+  background-color: $bg-color;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: $mobile-screen-width) {
+    position: relative;
+    left: 0;
+    top: 0;
+
+    max-height: 100%;
+
+    border-radius: 0;
+    transform: none;
+    overflow-y: scroll;
+  }
+
+  &--success {
+    background-color: $blue;
+  }
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+
+    padding: 5px 10px;
+
+    font-size: 30px;
+    color: $font-color;
+
+    border: 0;
+    background-color: transparent;
+
+    &:hover {
+      color: $reserve-font-color;
+    }
+
+    &--active {
+      color: #fff;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
+  &__ticket-details {
+    border-bottom: 1px solid $gray-color;
+
+    @media (max-width: $tablet-screen-width) {
+      padding-top: 20px;
+    }
+  }
+
+  &__price {
+    @extend %font-price;
+
+    margin-left: $modal-window-padding;
+    padding: 20px 0 15px 0;
+
+    font-size: 22px;
+
+    @media (max-width: $tablet-screen-width) {
+      margin-left: $tablet-modal-window-padding;
+    }
+  }
+
+  &__success-purchase {
+    width: 400px;
+    height: 200px;
+  }
+
+  &__text-success {
+    position: relative;
+    top: 50%;
+
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+
+    transform: translateY(-50%);
+  }
+}

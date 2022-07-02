@@ -1,0 +1,11 @@
+@import '../../styles-extends/extends';
+
+.ChooseCurrency {
+  &__title {
+    @extend %search-params-title;
+  }
+
+  &__selectors {
+    display: flex;
+  }
+}

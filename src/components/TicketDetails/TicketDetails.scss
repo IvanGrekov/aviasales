@@ -1,0 +1,59 @@
+@import '../../styles-extends/variables';
+@import '../../styles-extends/mixins';
+
+.TicketDetails {
+  &__stops-info {
+    margin-left: -30px;
+    padding-top: 10px;
+
+    @media (max-width: $tablet-screen-width) {
+      margin-left: -10px;
+    }
+
+    @media (max-width: $mobile-screen-width) {
+      margin-left: 0;
+    }
+  }
+
+  &__stops-info-text {
+    text-align: center;
+    color: $reserve-font-color;
+
+    @media (max-width: $mobile-screen-width) {
+      &--modal {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__stops-info-decoration {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    @media (max-width: $mobile-screen-width) {
+      justify-content: center;
+      width: 200px;
+      margin: 0 auto;
+
+      &--modal {
+        display: none;
+      }
+    }
+  }
+
+  &__stops-info-plane-icon {
+    @include createSquare(20px);
+
+    background-image: url('../../images/plane-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__stops-info-decoration-item {
+    width: 150px;
+    height: 1px;
+
+    background-color: $stops-decoration-color;
+  }
+}
